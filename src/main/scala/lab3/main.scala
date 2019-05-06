@@ -5,7 +5,7 @@ import java.io.FileWriter
 import utils._
 
 object Appl {
-  def readWriteFile(fileName: String, destFileName: String) = try {
+  def readWriteFile(fileName: String, destFileName: String): Unit = try {
     println("Opening the file...")
     val inFile = scala.io.Source.fromFile(fileName)
     try {
